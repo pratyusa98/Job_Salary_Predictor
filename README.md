@@ -3,3 +3,10 @@ This project aims to predict salary for specific fields - data related positions
 
 ## Data Sources
 Indeed.com, 1000+ jobs were scrapped from Indeed.com By using Selenium
+
+
+### Project Roadmap
+<img src="img/1.png">
+
+### Understand Data
+<img src="img/2.png">
