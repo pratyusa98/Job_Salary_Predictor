@@ -9,6 +9,8 @@ This project aims to predict salary for specific fields - data related positions
 ## Data Sources
 Indeed.com, 1000+ jobs were scrapped from Indeed.com By using Selenium
 
+### Deployment
+To make this tool accessible to non-technical users, I created a flask app and deployed to heroku here: https://job-salary-predict.herokuapp.com. Users can just copy a full job description in data related fields and paste here to get the salary range.
 
 ### Project Roadmap
 <img src="img/1.png">
