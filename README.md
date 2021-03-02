@@ -15,3 +15,6 @@ Indeed.com, 1000+ jobs were scrapped from Indeed.com By using Selenium
 
 ### Understand Data
 <img src="img/2.png">
+
+### Output
+<img src="img/3.png">
