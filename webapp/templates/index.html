@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Job Salary Predictor</title>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100" style="background-image: url('https://moneyinc.com/wp-content/uploads/2018/12/Indeed-Conversion-Tracker.jpg');
+ background-repeat: no-repeat;  background-attachment: fixed;
+  background-size: cover;">
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container mt-3" style="color:white">
+    <h2><center> Job Salary Predictor </center></h2>
+<p><center>*This predictor was built based on around 1021 data which are scrapped Using Selenium from indeed.com related
+    full job descriptions. it might not reflect the
+    current salary range.</center></p>
+  </div>
+
+       <div class="container">
+<form action="/predict" method="post">
+	<center><h5 style="color:white"> Please enter a full job description below </h5></center>
+	<br>
+
+  <div class="form-group">
+    <textarea class="form-control p-4" id="exampleFormControlTextarea1"  name="description"rows="8" cols="50" wrap="hard"></textarea>
+  </div>
+
+    <div class="form-row">
+        <input type="submit" value="Predict" class="btn btn-success">
+                </div>
+
+</form>
+
+<center><h4><span id='salary_prediction_text' style="color:white">{{salary_prediction_text}}</span></h4></center>
+<center><span id='salary-range' style="color:white">{{salaryRange}}</span></center>
+</div> <br><br>
+
+
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">© Copyright By <a href="https://github.com/pratyusa98"> Pratyusa Dwibedy </a>.2021</span>
+  </div>
+</footer>
+
+  </body>
+</html>
